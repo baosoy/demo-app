@@ -29,6 +29,7 @@ export default function Home() {
         <label>
           Email address
           <input
+            className="border border-black"
             value={form.username}
             onChange={(e) =>
               setForm({ ...form, username: e.currentTarget.value })
@@ -39,6 +40,7 @@ export default function Home() {
         <label>
           Password
           <input
+            className="border border-black"
             value={form.password}
             onChange={(e) =>
               setForm({ ...form, password: e.currentTarget.value })
@@ -46,6 +48,7 @@ export default function Home() {
             type="password"
           />
         </label>
+        <button type="submit">Submit</button>
       </form>
     </main>
   );
